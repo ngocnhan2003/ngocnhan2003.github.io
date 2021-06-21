@@ -1,5 +1,7 @@
 ---
-published: false
+published: true
+layout: post
+author: ngocnhan2003
 ---
 ## A New Post
 
