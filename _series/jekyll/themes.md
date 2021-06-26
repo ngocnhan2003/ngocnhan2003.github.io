@@ -1,6 +1,6 @@
 ---
 title: Themes
-permalink: /docs/themes/
+permalink: /series/themes/
 ---
 
 By default, this website uses `paper` theme, but you can change it to another [bootwatch theme](https://bootswatch.com/3/) by setting

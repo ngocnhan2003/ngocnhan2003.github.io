@@ -10,16 +10,16 @@ layout: default
                 <h4>RECENT POSTS</h4>
                 <ul class="list-unstyled post-list-container">
                     {% for post in site.posts limit:10 %}
-                    <li><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
+                    <li class="post-item"><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
                     {% endfor %}
-                    <li><a href="{{ "/allposts" | relative_url }}">All posts ...</a></li>
+                    <li class="post-item"><a href="{{ "/allposts" | relative_url }}">All posts ...</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="col-md-8">
             <h1>{{ page.title }}</h1>
-            <p><i class="fa fa-clock-o fa-lg"></i>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <i class="fa fa-pencil-square-o fa-lg"></i>{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            <p><i class="fa fa-clock-o fa-lg fa-icon"></i>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <i class="fa fa-pencil-square-o fa-lg fa-icon"></i>{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
             <div  id="markdown-content-container">{{ content }}</div>
             <div style="clear:both;">
               <p class="text-center">

@@ -1,0 +1,12 @@
+- title: Github Pages with Jekyll
+  series:
+    - home
+    - themes
+    - customization
+    - cheatsheet
+    - font-awesome
+    - bootstrap
+
+- title: Docker Cheat Sheet
+  series:
+    - Install

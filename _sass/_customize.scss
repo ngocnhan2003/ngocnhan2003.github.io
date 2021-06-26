@@ -1,0 +1,77 @@
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "_variables";
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("../fonts/MontserratAlternates.ttf");
+}
+
+body {
+  font-family: "MontserratAlternates";
+}
+
+.footer {
+  padding: 5px;
+  .footer-icons {
+    margin-bottom: 0px;
+    i {
+      margin: 5px;
+    }
+  }
+}
+
+.fa-icon {
+  margin-right: 5px;
+}
+
+.tt-dataset {
+  background-color: $bg-color;
+  cursor: pointer;
+  .tt-cursor {
+    background-color: $sl-color;
+  }
+  .tt-suggestion {
+    padding: 5px;
+    &:hover {
+      background-color: $sl-color;
+    }
+    & + .tt-suggestion {
+      border-top: 1px gray dotted;
+    }
+  }
+}
+
+// List of posts
+.post-item {
+  display: flex;
+  padding: 10px;
+  
+  &:hover {
+    background-color: darkslategray;
+  }
+
+  &:not(:first-child) {
+    border-top: 1px solid gray;
+  }
+
+  .post-item-date {
+    min-width: 120px;
+    font-family: monospace;
+    font-weight: 700;
+    &::after{
+        content: " • ";
+        white-space: pre;
+      }
+    @include media-query($on-mobile) {
+      font-size: 13px;
+    }
+  }
+
+  .post-item-title {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+  }
+}

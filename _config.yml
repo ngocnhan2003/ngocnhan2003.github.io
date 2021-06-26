@@ -6,7 +6,7 @@ description: >
   A Software Developer
 lang: en-US
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://ngocnhan2003.github.io/blog # the base hostname & protocol for your site
 git_address: https://github.com/ngocnhan2003/blog
 git_edit_address: https://github.com/ngocnhan2003/blog/blob/master
@@ -39,24 +39,24 @@ exclude:
   - README.md
 timezone: Europe/Berlin
 defaults:
-- scope:
-    path: _posts
-    type: posts
-  values:
-    layout: post
-    sectionid: blog
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: post
+      sectionid: blog
 
-- scope:
-    path: _docs
-    type: docs
-  values:
-    layout: docs
-    sectionid: docs
-    seo:
-      type: "WebPage"
+  - scope:
+      path: _series
+      type: series
+    values:
+      layout: series
+      sectionid: series
+      seo:
+        type: "WebPage"
 
 collections:
-  docs:
+  series:
     permalink: /:collection/:path/
     output: true
   posts:
