@@ -76,6 +76,16 @@ body {
   }
 }
 
+html > body {
+  // background-color: rgb(29, 29, 29);
+  // color: ghostwhite;
+}
+
+.disable-select {
+  cursor: default;
+  user-select: none;
+}
+
 // animation
 .terminal_blink {
   font-weight: lighter;
@@ -111,7 +121,7 @@ body {
 
 a:hover,
 a:focus {
-  color: black;
-  text-decoration-style: dotted;
-  text-decoration-color: gray;
+  // color: #005cfd;
+  // text-decoration-style: dashed;
+  // text-decoration-color: #4883ec;
 }

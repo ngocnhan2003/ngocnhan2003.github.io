@@ -20,7 +20,7 @@ social:
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
-bootwatch: Readable # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+bootwatch: readable_dark # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
 
 # Build settings
 markdown: kramdown
