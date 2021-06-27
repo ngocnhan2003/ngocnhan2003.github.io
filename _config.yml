@@ -5,7 +5,6 @@ email: ngocnhan2003.se@gmail.com
 description: >
   A Software Developer
 lang: en-US
-
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://ngocnhan2003.github.io/blog # the base hostname & protocol for your site
 git_address: https://github.com/ngocnhan2003/blog
@@ -19,7 +18,7 @@ social:
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
-bootwatch: Solar # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+bootwatch: Readable # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
 
 # Build settings
 markdown: kramdown
@@ -44,16 +43,21 @@ defaults:
       type: posts
     values:
       layout: post
-      sectionid: blog
-
+      sectionId: blog
   - scope:
       path: _series
       type: series
     values:
       layout: series
-      sectionid: series
+      sectionId: series
       seo:
         type: "WebPage"
+  - scope:
+      path: _gallery
+      type: gallery
+    values:
+      layout: gallery
+      sectionId: gallery
 
 collections:
   series:

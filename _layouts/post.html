@@ -19,14 +19,12 @@ layout: default
 
         <div class="col-md-8">
             <h1>{{ page.title }}</h1>
-            <p><i class="fa fa-clock-o fa-lg fa-icon"></i>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <i class="fa fa-pencil-square-o fa-lg fa-icon"></i>{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            <p><i class="fa fa-clock-o fa-lg fa-icon"></i>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <i class="fa fa-user fa-lg fa-icon"></i>{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
             <div  id="markdown-content-container">{{ content }}</div>
             <div style="clear:both;">
               <p class="text-center">
                 <br />
-                <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default" role="button">
-                  <i class="fa fa-pencil fa-lg"></i> Improve this post
-                </a>
+                {% include buttons.html %}
               </p>
             </div>
             <hr>

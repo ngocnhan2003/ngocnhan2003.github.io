@@ -45,9 +45,9 @@ body {
 .post-item {
   display: flex;
   padding: 10px;
-  
+
   &:hover {
-    background-color: darkslategray;
+    background-color: $hr-color;
   }
 
   &:not(:first-child) {
@@ -58,10 +58,10 @@ body {
     min-width: 120px;
     font-family: monospace;
     font-weight: 700;
-    &::after{
-        content: " • ";
-        white-space: pre;
-      }
+    &::after {
+      content: " • ";
+      white-space: pre;
+    }
     @include media-query($on-mobile) {
       font-size: 13px;
     }
@@ -74,4 +74,44 @@ body {
     font-weight: normal;
     letter-spacing: 0.1px;
   }
+}
+
+// animation
+.terminal_blink {
+  font-weight: lighter;
+  &::after {
+    content: "_";
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:hover,
+a:focus {
+  color: black;
+  text-decoration-style: dotted;
+  text-decoration-color: gray;
 }

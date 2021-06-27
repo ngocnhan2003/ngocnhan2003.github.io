@@ -5,11 +5,11 @@ layout: default
 <div class="header-container jumbotron">
     <div class="container">
 
-        <h1><i class="fa fa-terminal" aria-hidden="true"></i>{{ site.title }}</h1>
+        <h1 class="terminal_blink"><i class="fa fa-angle-right" aria-hidden="true"></i> {{ site.title }}</h1>
         <p>A Software Developer</p>
         <p>
-            <a class="btn btn-success btn-sm" href="{{ "/profile/" | relative_url }}" role="button">> Profile</a>
-            <a class="btn btn-success btn-sm" href="{{ "/allposts/" | relative_url }}" role="button">> Blog</a>
+            <a class="btn btn-default btn-sm" href="{{ "/profile" | relative_url }}" role="button"><i class="fa fa-user-circle" aria-hidden="true"></i> Profile</a>
+            <a class="btn btn-default btn-sm" href="{{ "/allposts" | relative_url }}" role="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Blog</a>
         </p>
     </div>
 </div>
