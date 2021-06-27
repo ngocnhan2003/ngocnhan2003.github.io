@@ -21,3 +21,10 @@
 ;
 
 @import "customize";
+
+.header-container {
+  {% if site.bootwatch %}
+  background: url("{{ site.cdn_img }}/assets/img/bg.jpg?w=1280") no-repeat 50% 0;
+  {% endif %}
+
+}

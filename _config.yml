@@ -6,9 +6,11 @@ description: >
   A Software Developer
 lang: en-US
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://ngocnhan2003.github.io/blog # the base hostname & protocol for your site
-git_address: https://github.com/ngocnhan2003/blog
-git_edit_address: https://github.com/ngocnhan2003/blog/blob/master
+repo: ngocnhan2003.github.io
+url: https://ngocnhan2003.github.io # the base hostname & protocol for your site
+git_address: https://github.com/ngocnhan2003/ngocnhan2003.github.io
+git_edit_address: https://github.com/ngocnhan2003/ngocnhan2003.github.io/blob/master
+cdn_img: https://i2.wp.com/ngocnhan2003.github.io
 
 social:
   linkedin: https://www.linkedin.com/in/
