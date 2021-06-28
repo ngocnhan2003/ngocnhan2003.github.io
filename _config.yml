@@ -10,6 +10,7 @@ repo: ngocnhan2003.github.io
 url: https://ngocnhan2003.github.io # the base hostname & protocol for your site
 git_address: https://github.com/ngocnhan2003/ngocnhan2003.github.io
 git_edit_address: https://github.com/ngocnhan2003/ngocnhan2003.github.io/blob/master
+git_raw_address: https://github.com/ngocnhan2003/ngocnhan2003.github.io/raw/master
 cdn_img: https://i2.wp.com/ngocnhan2003.github.io
 
 social:
