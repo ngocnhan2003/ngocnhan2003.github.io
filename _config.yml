@@ -70,3 +70,6 @@ collections:
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
+  tags:
+    output: true
+    permalink: tags/:path/
