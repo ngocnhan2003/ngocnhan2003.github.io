@@ -1,6 +1,6 @@
-# @ngocnhan2003
+# [@ngocnhan2003](https://ngocnhan2003.github.io)
 
-Go to [the website](https://ngocnhan2003.github.io/{{ site.baseurl }}/) for detailed information and demo.
+Go to [ngocnhan2003.github.io](https://ngocnhan2003.github.io) for detailed information and demo.
 
 ## Running locally
 
@@ -11,8 +11,8 @@ You need Ruby and gem before starting, then:
 gem install bundler
 
 # clone the project
-git clone https://github.com/aksakalli/{{ site.baseurl }}.git
-cd {{ site.baseurl }}
+git clone https://github.com/ngocnhan2003/ngocnhan2003.github.io.git
+cd ngocnhan2003.github.io
 
 # install dependencies
 bundle install
@@ -40,13 +40,13 @@ that serves files from Nginx for better performance in production.
 Build the image for your site's `JEKYLL_BASEURL`:
 
 ```
-docker build --build-arg JEKYLL_BASEURL="/your-base/url" -t {{ site.baseurl }} .
+docker build --build-arg JEKYLL_BASEURL="" -t ngocnhan2003 .
 ```
 
-(or leave it empty for root: `JEKYLL_BASEURL=""`) and serve it:
+serve it:
 
 ```
-docker run -p 8080:80 {{ site.baseurl }}
+docker run -p 8080:80 ngocnhan2003
 ```
 
 ## Github Pages
@@ -62,16 +62,16 @@ gem "github-pages", group: :jekyll_plugins
 
 **_config.yml**
 ```
-# Configure the remote_theme plugin with the gh-pages branch
+# Configure the remote_theme plugin
 # or the specific tag
-remote_theme: aksakalli/{{ site.baseurl }}@gh-pages   
+remote_theme: ngocnhan2003/ngocnhan2003.github.io@master
 ```
 
 ### Theme Assets
 
 Files from your project will override any theme file with the same name.  For example, the most comment use case for this, would be to modify your sites theme or colors.   To do this, the following steps should be taken:
 
-1) Copy the contents of the `aksakalli/{{ site.baseurl }}/asset/css/main.scss` to your own project (maintaining folder structure)
+1) Copy the contents of the `/asset/css/main.scss` to your own project (maintaining folder structure)
 2) Modify the variables you wish to use prior to the import statements, for example:
 
 ```
