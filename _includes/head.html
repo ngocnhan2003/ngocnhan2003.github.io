@@ -6,8 +6,9 @@
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | relative_url }}"> 
   <link rel="shortcut icon" href="{{ "/favicon.ico?1" | relative_url }}"> 
-  {% seo %} <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}" /> 
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}" />
+  {% seo %} 
   {% if site.tags != "" %} {% include collecttags.html %} {% endif %}
-  {% if page.header-img %} <meta property="og:image" content="{{ site.url }}/{{ page.header_img }}" />{% endif %}
+  {% if page.header_img %} <meta property="og:image" content="{{ site.url }}/{{ page.header_img }}" />{% endif %}
   <meta property="og:description" content="{{ page.subtitle }}" />
 </head>
