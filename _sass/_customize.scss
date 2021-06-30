@@ -133,3 +133,7 @@ a.tag {
     margin-left: 5px;
   }
 }
+
+.pager li>a:hover, .pager li>a:focus {
+    border: 1px solid #eee;
+}
