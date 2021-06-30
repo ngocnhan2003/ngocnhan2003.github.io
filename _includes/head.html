@@ -9,6 +9,6 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}" />
   {% seo %} 
   {% if site.tags != "" %} {% include collecttags.html %} {% endif %}
-  {% if page.header_img %} <meta property="og:image" content="{{ site.url }}/{{ page.header_img }}" />{% endif %}
+  {% if page.header_img %} <meta property="og:image" content="{{ site.cdn_img_raw }}/{{ page.header_img }}" />{% endif %}
   <meta property="og:description" content="{{ page.subtitle }}" />
 </head>
