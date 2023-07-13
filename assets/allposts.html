@@ -1,0 +1,20 @@
+---
+title: Posts
+layout: default
+sectionId: blog
+permalink: allposts.html
+---
+
+<div class="container">
+  <div class="inner-content">
+    <h1>All Posts</h1>
+    {% for post in site.posts %}
+    <p>
+      <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong>
+      <!-- <img src="{{ post.header_img }}" alt="" srcset="" height="100"> -->
+      <!-- <span>- {{ post.date | date: "%B %e, %Y" }}</span> -->
+      {% include read_time.html content=post.content %}
+    </p>
+    {% endfor %}
+  </div>
+</div>

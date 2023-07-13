@@ -1,0 +1,75 @@
+# Site settings
+title: ngocnhan2003
+author: ngocnhan2003
+email: ngocnhan2003.se@gmail.com
+description: >
+  Software Engineer
+lang: en-US
+baseurl: "" # the subpath of your site, e.g. /blog/
+repo: ngocnhan2003.github.io
+url: https://ngocnhan2003.github.io # the base hostname & protocol for your site
+git_address: https://github.com/ngocnhan2003
+git_edit_address: https://github.com/ngocnhan2003/ngocnhan2003.github.io/blob/master
+git_raw_address: https://github.com/ngocnhan2003/ngocnhan2003.github.io/raw/master
+cdn_img: https://i2.wp.com/ngocnhan2003.github.io
+cdn_img_raw: https://i2.wp.com/raw.githubusercontent.com/ngocnhan2003/ngocnhan2003.github.io/master
+
+social:
+  linkedin: https://www.linkedin.com/in/
+  instagram: https://www.instagram.com/
+  facebook: https://www.facebook.com/
+  soundcloud: https://soundcloud.com/
+
+# theme options from https://bootswatch.com/3/
+# comment out this to use default Bootstrap
+bootwatch: readable_dark # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+# Plugins (previously gems:)
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+timezone: Asia/Ho_Chi_Minh
+defaults:
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: post
+      sectionId: blog
+  - scope:
+      path: _series
+      type: series
+    values:
+      layout: series
+      sectionId: series
+      seo:
+        type: "WebPage"
+  - scope:
+      path: _gallery
+      type: gallery
+    values:
+      layout: gallery
+      sectionId: gallery
+
+collections:
+  series:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
+  tags:
+    output: true
+    permalink: tags/:path/

@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-8">
+            <h1>{{ page.title }}</h1>
+            <p><i class="fa fa-clock-o fa-lg fa-icon"></i>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <i class="fa fa-user fa-lg fa-icon"></i>{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            <div  id="markdown-content-container">{{ content }}</div>
+            <div style="clear:both;">
+            <span>
+                {% for tag in page.tags %}
+                    {% capture tag_name %}{{ tag }}{% endcapture %}
+                    <a href="/tag/{{ tag_name }}" class="tag"><i class="fa fa-hashtag"></i>{{ tag_name }}</a>
+                {% endfor %}
+            </span>
+              <p class="text-center">
+                <br />
+                {% include buttons.html %}
+              </p>
+            </div>
+            <hr>
+            <ul class="pager">
+                {% if page.previous %}
+                <li class="previous">
+                    <a href="{{ page.previous.url | relative_url }}">
+                        <span aria-hidden="true">&larr;</span> Older
+                    </a>
+                </li>
+                {% endif %} {% if page.next %}
+                <li class="next">
+                    <a href="{{ page.next.url | relative_url }}">
+                      Newer <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <div class="well">
+                <h4>RECENT POSTS</h4>
+                <ul class="list-unstyled post-list-container">
+                    {% for post in site.posts limit:10 %}
+                    <li class="post-item"><a href="{{ post.url | relative_url }}" {% if page.title==post.title %} class="active" {% endif %}>{{ post.title }}</a></li>
+                    {% endfor %}
+                    <li class="post-item"><a href="{{ "/allposts" | relative_url }}">All posts ...</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>

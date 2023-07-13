@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                <!-- span><img src="{{ site.cdn_img  }}{{"/assets/img/logonav.png" | relative_url }}" alt="beeDev"></span -->
+                <span><img src="http://103.151.122.2/zl/img.png" alt="beeDev"></span>
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li {% if page.sectionId=='series' %} class="active" {% endif %}><a href="{{ "/series/jekyll-home/" | relative_url }}">Series</a></li>
+                <li {% if page.sectionId=='blog' %} class="active" {% endif %}><a href="{{ "/allposts" | relative_url }}">Posts</a></li>
+                <li {% if page.sectionId=='gallery' %} class="active" {% endif %}><a href="{{ "/gallery/" | relative_url }}">Gallery</a></li>
+                <li {% if page.sectionId=='about' %} class="active" {% endif %}><a href="{{ "/ngocnhan2003" | relative_url }}">About</a></li>
+            </ul>
+            <div class="navbar-right">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="search" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ site.git_address }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

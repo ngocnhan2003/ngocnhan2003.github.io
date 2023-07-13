@@ -1,0 +1,139 @@
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "_variables";
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("../fonts/MontserratAlternates.ttf");
+}
+
+body {
+  font-family: "MontserratAlternates";
+}
+
+.footer {
+  background-color: #555;
+  color: lightgray;
+  padding: 5px;
+  .footer-icons {
+    margin-bottom: 0px;
+    i {
+      margin: 5px;
+    }
+  }
+}
+
+.fa-icon {
+  margin-right: 5px;
+}
+
+.tt-dataset {
+  background-color: $bg-color;
+  cursor: pointer;
+  .tt-cursor {
+    background-color: $sl-color;
+  }
+  .tt-suggestion {
+    padding: 5px;
+    &:hover {
+      background-color: $sl-color;
+    }
+    & + .tt-suggestion {
+      border-top: 1px gray dotted;
+    }
+  }
+}
+
+// List of posts
+.post-item {
+  display: flex;
+  padding: 10px;
+
+  &:hover {
+    background-color: $hr-color;
+  }
+
+  &:not(:first-child) {
+    border-top: 1px solid gray;
+  }
+
+  .post-item-date {
+    min-width: 120px;
+    font-family: monospace;
+    font-weight: 700;
+    &::after {
+      content: " • ";
+      white-space: pre;
+    }
+    @include media-query($on-mobile) {
+      font-size: 13px;
+    }
+  }
+
+  .post-item-title {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+  }
+}
+
+html > body {
+  // background-color: rgb(29, 29, 29);
+  // color: ghostwhite;
+}
+
+.disable-select {
+  cursor: default;
+  user-select: none;
+}
+
+// animation
+.terminal_blink {
+  font-weight: lighter;
+  &::after {
+    content: "_";
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a.tag {
+  background-color: #333;
+  font-family: monospace;
+  border-color: #222;
+  &:hover {
+    text-decoration: none;
+    // background-color: #555;
+  }
+  &:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
+.pager li>a:hover, .pager li>a:focus {
+    border: 1px solid #eee;
+}

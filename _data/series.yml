@@ -1,0 +1,127 @@
+- title: Github Pages with Jekyll
+  series:
+    - jekyll-home
+    - jekyll-themes
+    - jekyll-customization
+    - jekyll-cheatsheet
+    - jekyll-font-awesome
+    - jekyll-bootstrap
+
+- title: Python Builtin
+  series:
+    - builtin-abs
+    - builtin-aiter
+    - builtin-all
+    - builtin-any
+    - builtin-ascii
+    - builtin-bin
+    - builtin-bool
+    - builtin-breakpoint
+    - builtin-bytearray
+    - builtin-bytes
+    - builtin-callable
+    - builtin-chr
+    - builtin-classmethod
+    - builtin-compile
+    - builtin-complex
+    - builtin-delattr
+    - builtin-dict
+    - builtin-dir
+    - builtin-divmod
+    - builtin-enumerate
+    - builtin-eval
+    - builtin-exec
+    - builtin-filter
+    - builtin-float
+    - builtin-format
+    - builtin-frozenset
+    - builtin-getattr
+    - builtin-globals
+    - builtin-hasattr
+    - builtin-hash
+    - builtin-help
+    - builtin-hex
+    - builtin-id
+    - builtin-import
+    - builtin-input
+    - builtin-int
+    - builtin-isinstance
+    - builtin-issubclass
+    - builtin-iter
+    - builtin-len
+    - builtin-list
+    - builtin-locals
+    - builtin-map
+    - builtin-max
+    - builtin-memoryview
+    - builtin-min
+    - builtin-next
+    - builtin-object
+    - builtin-oct
+    - builtin-open
+    - builtin-ord
+    - builtin-pow
+    - builtin-print
+    - builtin-property
+    - builtin-range
+    - builtin-repr
+    - builtin-reversed
+    - builtin-round
+    - builtin-set
+    - builtin-setattr
+    - builtin-slice
+    - builtin-sorted
+    - builtin-staticmethod
+    - builtin-str
+    - builtin-sum
+    - builtin-super
+    - builtin-tuple
+    - builtin-type
+    - builtin-vars
+    - builtin-zip
+
+- title: Python Cheatsheet
+  series:
+    - cheatsheet-args-and-kwargs
+    - cheatsheet-basics
+    - cheatsheet-built-in-functions
+    - cheatsheet-comprehensions
+    - cheatsheet-context-manager
+    - cheatsheet-control-flow
+    - cheatsheet-dataclasses
+    - cheatsheet-debugging
+    - cheatsheet-dictionaries
+    - cheatsheet-exception-handling
+    - cheatsheet-file-directory-path
+    - cheatsheet-functions
+    - cheatsheet-json-yaml
+    - cheatsheet-lists-and-tuples
+    - cheatsheet-main
+    - cheatsheet-manipulating-strings
+    - cheatsheet-oop-basics
+    - cheatsheet-reading-and-writing-files
+    - cheatsheet-regular-expressions
+    - cheatsheet-sets
+    - cheatsheet-setup-py
+    - cheatsheet-string-formatting
+    - cheatsheet-virtual-environments
+    
+- title: Python Modules
+  series:
+    - modules-datetime-module
+    - modules-itertools-module
+    - modules-json-module
+    - modules-os-module
+    - modules-pathlib-module
+    - modules-random-module
+    - modules-shelve-module
+    - modules-zipfile-module
+    
+- title: Python Blog
+  series:
+    - blog-poetry-vscode-p1
+    - blog-poetry-vscode-p2
+    - blog-poetry-vscode-p3
+    - blog-args
+    - blog-comprehensions
+    - blog-sets
